@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FxiAVRRjACmK4iCMypXPYtEXUiq/fLQExPzJU7MO7ZEbFMwL+o2bpXDGG978z+F0azNBQA3+9RDoI8fnc52DEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\Practice\\MOD1\\MOD1\\MOD1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
