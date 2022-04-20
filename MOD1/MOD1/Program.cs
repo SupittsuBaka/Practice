@@ -1,5 +1,6 @@
 ﻿using System;
 using MOD1.HW1;
+using MOD1.HW2;
 
 namespace MOD1
 {
@@ -7,8 +8,27 @@ namespace MOD1
     {
         public static void Main()
         {
-            var guy = new Hw1person("Евгений", "Ендальцев", 20);
-            guy.Print();
+            /*HW1*/
+            var person = new HW1person("Евгений", "Ендальцев", 20);
+            person.Print();
+
+            /*HW2*/
+            var inRange = new HW2InRange(100);
+            inRange.PrintArray();
+            inRange.CheckInRange();
+            Console.WriteLine();
+
+            var selectSort = new HW2SelectionSort();
+            Console.Write($"{Environment.NewLine}Before selecting:");
+            selectSort.PrintAArr();
+            selectSort.PrintBArr();
+            selectSort.Selection();
+            Console.Write($"{Environment.NewLine}After selecting/Before sorting:");
+            selectSort.PrintAArr();
+            selectSort.PrintBArr();
+            selectSort.BArrSort();
+            Console.Write($"{Environment.NewLine}After sorting:");
+            selectSort.PrintBArr();
         }
     }
 }

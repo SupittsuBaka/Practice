@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MOD1.HW1
 {
-    public class Hw1person
+    public class HW1person
     {
-        public Hw1person()
+        public HW1person()
         {
         }
 
-        public Hw1person(string firstName, string lastName, int age)
+        public HW1person(string firstName, string lastName, int age)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -27,8 +27,7 @@ namespace MOD1.HW1
 
         public void Print()
         {
-            Console.WriteLine($"{FirstName} {LastName}.");
-            Console.WriteLine($"До начала новой жизни мне осталось {NumberOfYearsUpToForty} лет.");
+            Console.WriteLine($"{FirstName} {LastName}.{Environment.NewLine}До начала новой жизни мне осталось {NumberOfYearsUpToForty} лет.");
         }
     }
 }
