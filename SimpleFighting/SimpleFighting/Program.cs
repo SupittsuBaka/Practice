@@ -1,12 +1,28 @@
 ﻿using System;
+using SimpleFighting.Fighters;
+using SimpleFighting.Fighters.Warriors;
+using SimpleFighting.Arenas;
 
 namespace SimpleFighting
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var achillesSonOfPeleus = new Warrior();
+            var richardTheLionheart = new Knight();
+            var colosseum = new FightingArena();
+
+            var result = colosseum.Fighting(richardTheLionheart, achillesSonOfPeleus);
+
+            if (result)
+            {
+                Console.WriteLine($"Richard the Lionheart won");
+            }
+            else
+            {
+                Console.WriteLine($"Achilles son of Peleus won");
+            }
         }
     }
 }
