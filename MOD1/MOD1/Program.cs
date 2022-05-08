@@ -9,11 +9,11 @@ namespace MOD1
     {
         public static void Main()
         {
-            /*HW1
+            /*HW1*/
             var person = new HW1person("Евгений", "Ендальцев", 20);
-            person.Print();*/
+            person.Print();
 
-            /*HW2
+            /*HW2*/
             var inRange = new HW2InRange(100);
             inRange.PrintArray();
             inRange.CheckInRange();
@@ -31,12 +31,13 @@ namespace MOD1
             Console.Write($"{Environment.NewLine}After sorting:");
             selectSort.PrintBArr();
             Console.WriteLine();
-            */
 
             /*HW3*/
             var stringEditor = new HW3StringEditor();
-            /*stringEditor.NumberRemover();*/
-            Console.WriteLine(stringEditor);
+            stringEditor.NumberRemover();
+            Console.WriteLine(stringEditor.EditableString);
+            stringEditor.ReverseOddWords();
+            Console.WriteLine(stringEditor.EditableString);
         }
     }
 }
